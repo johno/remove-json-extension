@@ -1,6 +1,6 @@
 # remove-json-extension [![Build Status](https://secure.travis-ci.org/johnotander/remove-json-extension.png?branch=master)](https://travis-ci.org/johnotander/remove-json-extension) [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
-Remove the json extension from a path or url.
+Remove the json extension from a path.
 
 ## Installation
 
@@ -13,7 +13,9 @@ npm install --save remove-json-extension
 ```javascript
 var removeJsonExtension = require('remove-json-extension')
 
-removeJsonExtension()  // => true
+removeJsonExtension('some/json/file.json')  // => 'some/json/file'
+removeJsonExtension('some/json/file.JSON')  // => 'some/json/file'
+removeJsonExtension('foo/bar.js')  // => 'foo/bar.js'
 ```
 
 ## License

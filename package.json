@@ -1,6 +1,6 @@
 {
   "name": "remove-json-extension",
-  "description": "Remove the json extension from a path or url.",
+  "description": "Remove the json extension from a path.",
   "author": "John Otander",
   "version": "0.1.0",
   "main": "index.js",
@@ -15,7 +15,11 @@
     "url": "https://github.com/johnotander/remove-json-extension.git"
   },
   "keywords": [
-
+    "remove",
+    "json",
+    "extension",
+    "ext",
+    "rm"
   ],
   "license": "MIT",
   "bugs": {

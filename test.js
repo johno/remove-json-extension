@@ -1,8 +1,17 @@
 import test from 'ava'
 import removeJsonExtension from './'
 
-test('remove-json-extension does something awesome', t => {
-  t.plan(1)
+const jsonFiles = [
+  'foo/bar.json',
+  'foo/bar.JSON',
+  'foo/bar.Json',
+  'foo/bar'
+]
 
-  t.true(removeJsonExtension())
+test('removes json extensions', t => {
+  t.plan(jsonFiles.length)
+
+  jsonFiles.forEach(jsonFile => {
+    t.is(removeJsonExtension(jsonFile), 'foo/bar')
+  })
 })

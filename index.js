@@ -1,7 +1,9 @@
 'use strict'
 
-module.exports = function removeJsonExtension (options) {
-  options = options || {}
+module.exports = function removeJsonExtension (path) {
+  if (typeof path !== 'string') {
+    throw new TypeError('remove-json-extension expected a string')
+  }
 
-  return true
+  return path.replace(/\.json$/i, '')
 }
