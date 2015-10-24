@@ -1,0 +1,29 @@
+{
+  "name": "remove-json-extension",
+  "description": "Remove the json extension from a path or url.",
+  "author": "John Otander",
+  "version": "0.1.0",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnotander/remove-json-extension.git"
+  },
+  "keywords": [
+
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnotander/remove-json-extension/issues"
+  },
+  "homepage": "https://github.com/johnotander/remove-json-extension",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "*"
+  }
+}
